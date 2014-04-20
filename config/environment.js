@@ -1,6 +1,7 @@
 module.exports = function(environment) {
   var ENV = {
     rootURL: '/',
+    location: 'history',
     FEATURES: {
       // Here you can enable experimental featuers on an ember canary build
       // e.g. 'with-controller': true
@@ -8,11 +9,10 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.rootURL = '/'
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ember-dashboard/'
+    ENV.rootURL = '/ember-dashboard/';
     ENV.location = 'hash';
   }
 
