@@ -8,11 +8,12 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-
+    ENV.rootURL = '/'
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/ember-dashboard/'
+    ENV.location = 'hash';
   }
 
   return JSON.stringify(ENV); // Set in index.html
