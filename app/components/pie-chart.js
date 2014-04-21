@@ -1,5 +1,7 @@
 export default Ember.Component.extend({
-  templateName: "components/pie-chart",
+  layoutName: "components/pie-chart",
+  classNames: ['pie-chart', 'dashboard-widget'],
+  
 
   init: function() {
     this._super();

@@ -4,6 +4,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('dashboard');
+  this.resource('model');
 });
 
 export default Router;

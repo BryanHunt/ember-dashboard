@@ -1,5 +1,7 @@
 export default Ember.Component.extend({
-  templateName: "components/line-chart",
+  layoutName: "components/line-chart",
+  classNames: ['line-chart', 'dashboard-widget'],
+  
 
   init: function() {
     this._super();

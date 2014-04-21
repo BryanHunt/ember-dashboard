@@ -1,5 +1,6 @@
 export default Ember.Component.extend({
-  templateName: "components/bar-chart",
+  layoutName: "components/bar-chart",
+  classNames: ['bar-chart', 'dashboard-widget'],
 
   init: function() {
     this._super();

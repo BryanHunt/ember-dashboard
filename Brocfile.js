@@ -61,7 +61,10 @@ module.exports = function (broccoli) {
     'ember-data.js',
     'ember-resolver.js',
     'ember-shim.js',
-    'd3/d3.js'
+    'd3/d3.js',
+    'ember-addons.bs_for_ember/dist/js/bs-core.max.js',
+    'ember-addons.bs_for_ember/dist/js/bs-nav.max.js',
+
   ];
 
   var applicationJs = preprocessJs(appAndDependencies, '/', prefix);

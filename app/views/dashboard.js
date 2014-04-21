@@ -1,4 +1,6 @@
 export default Ember.ContainerView.extend({
+  classNames: ['dashboard'],
+
   didInsertElement: function() {
     this._super();
     var container = this;
